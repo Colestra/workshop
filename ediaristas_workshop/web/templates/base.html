@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark md-4">
+    <a href="#" class="navbar-brand">Ediaristas TreinaWeb</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul clas="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a href="{% url 'listar_diaristas'%}" class="nav-link">Home</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+<main role="main" class="container">
+  {% block conteudo %}
+
+{% endblock conteudo %}
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js" integrity="sha512-Y/GIYsd+LaQm6bGysIClyez2HGCIN1yrs94wUrHoRAD5RSURkqqVQEU6mM51O90hqS80ABFTGtiDpSXd2O05nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(function (){
+            $.applyDataMask();
+        });
+    </script>
+
+
+
+</body>
+</html>
